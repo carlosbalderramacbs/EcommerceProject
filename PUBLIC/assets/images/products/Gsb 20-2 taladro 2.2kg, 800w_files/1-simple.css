@@ -1,0 +1,128 @@
+.waproductcountdown .count.curr,
+.waproductcountdown .wacount.bottom {
+    display: none;
+}
+.waproductcountdown .hidden {
+    display: none;
+}
+.wapc-main {
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+	display: inline-block;
+	float: none;
+	padding: 7px 0 5px 35px;
+	position: relative;
+	vertical-align: top;
+	width: auto;
+	margin: 0 !important;
+}
+.wapc-main:before {
+    color: #1e1e1e;
+	content: "\E192";
+	font-family: "Material Icons";
+	font-size: 28px;
+	left: 5px;
+	position: absolute;
+	right: auto;
+	top: 8px;
+	z-index: 1;
+}
+.waproductcountdown {
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    background: none;
+    display: none;
+}
+#index .waproductcountdown {
+    display: inline-block;
+}
+.wapc-main .time {
+    height: 20px;
+    width: 40px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    float: left;
+    text-align: center;
+    position: relative;
+    max-width: 4em;
+    overflow: hidden;
+	margin: 0;
+}
+@media (max-width: 767px) {
+    .wapc-main .time {
+        margin-right: 3px;
+    }
+}
+.wapc-main .wacount.next.top::after {
+    color: #111111;
+    content: ":";
+    position: absolute;
+    top: -2px;
+	right: 0;
+}
+.wapc-main .time:last-child .wacount.next.top::after {
+    content: "";
+}
+.wapc-main .wacount {
+    background: #f5f5f5;
+    color: #111;
+    display: block;
+    font: 400 16px/20px "Poppins";
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.wapc-main .seconds .wacount {
+    color: #f13340;
+}
+.wapc-main .label {
+    font-size: 11px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    color: #202020;
+    padding: 0;
+    font-weight: normal;
+    text-align: center;
+}
+#index .product-miniature.product-grid .thumbnail-container .waproductcountdown {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-radius: 0;
+	display: inline-block;
+	float: left;
+	left: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 0;
+	vertical-align: top;
+	width: 100%;
+}
+#index .product-miniature.product-grid .thumbnail-container:hover .waproductcountdown {
+	display: none;
+}
+@media (max-width: 767px) {
+    #index .product-miniature.product-grid .thumbnail-container:hover .waproductcountdown {
+		display: inline-block;
+	}
+	#index .product-miniature.product-grid .thumbnail-container .waproductcountdown {
+		bottom: 70px;
+		margin: 0;
+		top: auto;
+	}
+}
